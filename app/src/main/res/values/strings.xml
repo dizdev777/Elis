@@ -1,0 +1,9 @@
+<resources>
+    <string name="stars">Elysium Rise</string>
+    <string name="squeeze">squeeze Rise</string>
+    <string name="annual">Elysium annual</string>
+    <string name="facebook_app_id">228657000323903</string>
+    <string name="facebook_client_token">be7b4cd1ccd06de55432e74cac3683c5</string>
+    <string name="fb_login_protocol_scheme">myappevamobi</string>
+
+</resources>
