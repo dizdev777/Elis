@@ -3,8 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools">
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+
     <application
-        android:name=".topic.handful.rise.AppClass"
+        android:name=".topic.handful.qwqwq.AppClass"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -16,7 +20,7 @@
         android:theme="@style/Theme.ElysiumRise"
         tools:targetApi="31">
         <activity
-            android:name=".topic.handful.rise.MainActivity"
+            android:name=".topic.handful.qwqwq.MainActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:launchMode="singleTask"
             android:theme="@style/Theme.AppCompat.NoActionBar"
@@ -30,7 +34,7 @@
             android:value="@string/facebook_client_token" />
 
         <activity
-            android:name=".topic.handful.rise.SplashScreenActivity"
+            android:name=".topic.handful.qwqwq.SplashScreenActivity"
             android:screenOrientation="locked"
             android:theme="@style/Theme.AppCompat.NoActionBar"
             android:exported="true">
