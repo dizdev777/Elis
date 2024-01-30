@@ -6,12 +6,12 @@ import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
-import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import com.elisym.bigtise.elysiumrise.R
-import com.elisym.bigtise.elysiumrise.topic.handful.qwqwq.AppClass.Companion.li
+import com.elisym.bigtise.elysiumrise.ZaglushkaActivity
+import com.elisym.bigtise.elysiumrise.topic.handful.qwqwq.FIJwfwhquwiuqwu.Companion.li
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -28,7 +28,7 @@ class SplashScreenActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val urld = DeepLinkAndAdvertisingIdProvider(this@SplashScreenActivity)
+        val urld = IJFhuwguwurwr(this@SplashScreenActivity)
         val sharedPreferences = getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
 
         if (!sharedPreferences.contains(KEY_FIRST_ACTIVITY)) {
@@ -40,13 +40,12 @@ class SplashScreenActivity : AppCompatActivity() {
                     } else {
                         "$li$nk2?c=$ins&ad=$advertisingId"
                     }
-                    Toast.makeText(this@SplashScreenActivity, url, Toast.LENGTH_SHORT).show()
-                    when (checkWebPageStatus(url)) {
+                     when (fjiwqhuqwrhir(url)) {
                         200 -> {
                             withContext(Dispatchers.Main){
-                                saveFirstActivity(sharedPreferences, MainActivity::class.java)
+                                saveFirstActivity(sharedPreferences, HUIfuiwqgyqriwqur::class.java)
                             }
-                            val intent = Intent(this@SplashScreenActivity, MainActivity::class.java)
+                            val intent = Intent(this@SplashScreenActivity, HUIfuiwqgyqriwqur::class.java)
                             intent.putExtra("LLL_EXTRA", url)
                             startActivity(intent)
                             finish()
@@ -66,21 +65,21 @@ class SplashScreenActivity : AppCompatActivity() {
             }
         }
         else {
-            val firstActivityClass = getFirstActivity(sharedPreferences)
-            val intent = Intent(this@SplashScreenActivity, firstActivityClass)
-            startActivity(intent)
+            val fhuquwhuqwururw = fiqwirhuwqhuruwr(sharedPreferences)
+            val huqwfuqwruqwhru = Intent(this@SplashScreenActivity, fhuquwhuqwururw)
+            startActivity(huqwfuqwruqwhru)
             finish()
         }
         }
 
-    suspend fun checkWebPageStatus(url: String): Int {
-            val client = OkHttpClient()
-            val request = Request.Builder()
+    suspend fun fjiwqhuqwrhir(url: String): Int {
+            val fhqwufqiwihiruw = OkHttpClient()
+            val fhqwfqwfiquwfu = Request.Builder()
                 .url(url)
                 .build()
             return try {
                 withContext(Dispatchers.IO) {
-                    val response: Response = client.newCall(request).execute()
+                    val response: Response = fhqwufqiwihiruw.newCall(fhqwfqwfiquwfu).execute()
                     response.code
 
                 }
@@ -90,12 +89,12 @@ class SplashScreenActivity : AppCompatActivity() {
     }
 
     private fun saveFirstActivity(sharedPreferences: SharedPreferences, activityClass: Class<*>) {
-        val editor = sharedPreferences.edit()
-        editor.putString(KEY_FIRST_ACTIVITY, activityClass.name)
-        editor.apply()
+        val qwijjriwqjirjirw = sharedPreferences.edit()
+        qwijjriwqjirjirw.putString(KEY_FIRST_ACTIVITY, activityClass.name)
+        qwijjriwqjirjirw.apply()
     }
 
-    private fun getFirstActivity(sharedPreferences: SharedPreferences): Class<out Activity>? {
+    private fun fiqwirhuwqhuruwr(sharedPreferences: SharedPreferences): Class<out Activity>? {
         val activityName = sharedPreferences.getString(KEY_FIRST_ACTIVITY, null)
         return try {
             activityName?.let { Class.forName(it).asSubclass(Activity::class.java) }

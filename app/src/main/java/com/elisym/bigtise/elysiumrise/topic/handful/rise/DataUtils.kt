@@ -1,21 +1,21 @@
 package com.elisym.bigtise.elysiumrise.topic.handful.rise
 import android.content.Context
 
-class DataUtils(context: Context) {
+class DataUtils(fiqwhriw: Context) {
 
-    private val PREFS_NAME = "${context.packageName}_prefs"
-    private val KEY_LAST_OPENED_URL = "lastOpenedUrl"
+    private val fhiquwhfqwifi = "${fiqwhriw.packageName}_prefs"
+    private val fqwhifiqwjrjiw = "lastOpenedUrl"
     var l = ""
-    val sharedPreferences = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
+    val fqwuifjqwhfqiwirj = fiqwhriw.getSharedPreferences(fhiquwhfqwifi, Context.MODE_PRIVATE)
 
     fun saveLastOpenedUrl(url: String) {
         if(l == ""){
             l = getLastOpenedUrl(url).toString()
-            sharedPreferences.edit().putString(KEY_LAST_OPENED_URL, url).apply()
+            fqwuifjqwhfqiwirj.edit().putString(fqwhifiqwjrjiw, url).apply()
         }
     }
 
     fun getLastOpenedUrl(url: String): String? {
-        return sharedPreferences.getString(KEY_LAST_OPENED_URL, url)
+        return fqwuifjqwhfqiwirj.getString(fqwhifiqwjrjiw, url)
     }
 }
