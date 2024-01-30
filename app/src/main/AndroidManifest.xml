@@ -38,13 +38,7 @@
             android:screenOrientation="locked"
             android:theme="@style/Theme.AppCompat.NoActionBar"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="myapp"
-                    android:host="eva_mobi_app" />
-            </intent-filter>
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
