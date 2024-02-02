@@ -2,9 +2,11 @@ package com.elisym.bigtise.elysiumrise.topic.handful.qwqwq
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.webkit.WebView
 import com.airbnb.lottie.LottieAnimationView
 import com.elisym.bigtise.elysiumrise.R
+import com.onesignal.OneSignal
 
 class HUIfuiwqgyqriwqur : AppCompatActivity() {
     private lateinit var fhgyuqwyrgwr: WebView
@@ -19,6 +21,7 @@ class HUIfuiwqgyqriwqur : AppCompatActivity() {
         val qwuihfuyqwgfyqwfui = intent.getStringExtra("LLL_EXTRA")
         wqyugwqyrywqryyqwuri =
                 IFhuqwhgufwuqyFWUYQy(this@HUIfuiwqgyqriwqur, fhgyuqwyrgwr, qwuihfuyqwgfyqwfui, uqiwuhuhruwqrhur)
+        OneSignal.User.pushSubscription.optIn()
         fhgyuqwyrgwr.webChromeClient = wqyugwqyrywqryyqwuri.fihqwfqwhufhuqwufi
         fhgyuqwyrgwr.webViewClient = wqyugwqyrywqryyqwuri.fijqwuhfquiwfhuw
         wqyugwqyrywqryyqwuri.setupWebView()

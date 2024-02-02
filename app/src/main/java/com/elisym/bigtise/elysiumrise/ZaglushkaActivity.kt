@@ -40,7 +40,7 @@ class ZaglushkaActivity : ComponentActivity() {
         val group = Punitive(false)
         group.pipe()
         group.restraint()
-        OneSignal.User.pushSubscription.optOut()
+       OneSignal.User.pushSubscription.optOut()
         setContent {
             ElysiumRiseTheme {
                 val edge = remember{

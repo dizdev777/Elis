@@ -61,7 +61,7 @@ dependencies {
     implementation("androidx.navigation:navigation-compose:2.7.6")
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("com.squareup.okhttp3:mockwebserver:4.9.1")
-    implementation("com.onesignal:OneSignal:[5.0.0, 5.99.99]")
+    implementation("com.onesignal:OneSignal:[5.1.2, 5.1.2]")
     implementation("com.airbnb.android:lottie:6.2.0")
     implementation ("org.jsoup:jsoup:1.14.3")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")

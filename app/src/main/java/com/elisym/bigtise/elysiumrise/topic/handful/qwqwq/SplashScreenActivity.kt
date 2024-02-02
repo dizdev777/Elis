@@ -12,6 +12,7 @@ import androidx.lifecycle.lifecycleScope
 import com.elisym.bigtise.elysiumrise.R
 import com.elisym.bigtise.elysiumrise.ZaglushkaActivity
 import com.elisym.bigtise.elysiumrise.topic.handful.qwqwq.FIJwfwhquwiuqwu.Companion.li
+import com.onesignal.OneSignal
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -55,6 +56,7 @@ class SplashScreenActivity : AppCompatActivity() {
                             withContext(Dispatchers.Main){
                                 saveFirstActivity(sharedPreferences, ZaglushkaActivity::class.java)
                             }
+                            OneSignal.login(advertisingId)
                             val intent =
                                 Intent(this@SplashScreenActivity, ZaglushkaActivity::class.java)
                             startActivity(intent)
